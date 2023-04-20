@@ -1,6 +1,6 @@
 # homebrew-tap
 
-[![build](https://github.com/twelvelabs/homebrew-tap/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/twelvelabs/homebrew-tap/actions/workflows/build.yml)
+[Homebrew](https://brew.sh) tap for [@twelvelabs](https://github.com/twelvelabs) projects.
 
 ## How do I install these formulae?
 
