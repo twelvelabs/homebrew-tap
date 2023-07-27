@@ -5,13 +5,13 @@
 class Depctl < Formula
   desc "Manage project development dependencies"
   homepage "https://github.com/twelvelabs/depctl"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.0/depctl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "4abb9035bde5bdd9fc642236f7b004e8ca218deff0dc5b972accfddba071c77a"
+      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.1/depctl_0.1.1_darwin_arm64.tar.gz"
+      sha256 "6f6f2e59f3d06d775d1045d704ea2e745b5d13c7e5f4b293571f463f8b2251f1"
 
       def install
         bin.install "depctl"
@@ -22,8 +22,8 @@ class Depctl < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.0/depctl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5fc131cc0ac077e7d10c830339dab1e57b23e86415f49b3c4527e17837f05cfd"
+      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.1/depctl_0.1.1_darwin_amd64.tar.gz"
+      sha256 "14bf2e8b20f238e9a2416037eef1931684fe9e3ca36c3876f8ca4bd44fff0044"
 
       def install
         bin.install "depctl"
@@ -36,9 +36,9 @@ class Depctl < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.0/depctl_0.1.0_linux_amd64.tar.gz"
-      sha256 "50e0a07e2ae11dce506d0b49bc250ab64385395a984178629141e8c5e9e5a468"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.1/depctl_0.1.1_linux_arm64.tar.gz"
+      sha256 "dcf0b728c975f4b2f2da014ee655af6889fe03b34c0fe82270047c34a43a18e2"
 
       def install
         bin.install "depctl"
@@ -48,9 +48,9 @@ class Depctl < Formula
         man1.install "manpages/depctl.1.gz"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.0/depctl_0.1.0_linux_arm64.tar.gz"
-      sha256 "fd77df10facd65b5852a4bbc57f44fab89d592f1dc65f0d429f1301b622ef22e"
+    if Hardware::CPU.intel?
+      url "https://github.com/twelvelabs/depctl/releases/download/v0.1.1/depctl_0.1.1_linux_amd64.tar.gz"
+      sha256 "899b9c339e50e36cdb1171a6d5bebde28d6d089990e73495ed63ff6e5249503e"
 
       def install
         bin.install "depctl"
