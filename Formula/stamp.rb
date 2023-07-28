@@ -5,13 +5,13 @@
 class Stamp < Formula
   desc "A project and file scaffolding tool"
   homepage "https://github.com/twelvelabs/stamp"
-  version "0.4.0"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.0/stamp_0.4.0_darwin_arm64.tar.gz"
-      sha256 "e303c7374ec1e1caa3e6bdfd8c4d3b69cf502df51fa2daf778767d0be64ed6b1"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.2/stamp_0.4.2_darwin_arm64.tar.gz"
+      sha256 "5fdcd83294878b419853923bdd4cdeea61cceaf4cc4462628205e26a6da2f2c0"
 
       def install
         bin.install "stamp"
@@ -22,8 +22,8 @@ class Stamp < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.0/stamp_0.4.0_darwin_amd64.tar.gz"
-      sha256 "5c15a3a3693812c21dec3dd4365f170649c3b10bb5bee62bbb30b9cd83e91b86"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.2/stamp_0.4.2_darwin_amd64.tar.gz"
+      sha256 "f8785c30b1976bb5ef5b2cc35ffea5b5e31b8d377e556b4516c1c7f56b9e41a6"
 
       def install
         bin.install "stamp"
@@ -36,9 +36,9 @@ class Stamp < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.0/stamp_0.4.0_linux_arm64.tar.gz"
-      sha256 "ee1d95c252d3cef69e8995c489afa6d481e0e659424e51eab7be70894fd63f52"
+    if Hardware::CPU.intel?
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.2/stamp_0.4.2_linux_amd64.tar.gz"
+      sha256 "5f0f9c20d3af76ad4c754687128eb5f084352fe8cfb0bf38bde47c72d7090907"
 
       def install
         bin.install "stamp"
@@ -48,9 +48,9 @@ class Stamp < Formula
         man1.install "manpages/stamp.1.gz"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.0/stamp_0.4.0_linux_amd64.tar.gz"
-      sha256 "0b542682842a1b7f51822f236855d1ca80ec90ca023d762d3ef2a8dd6503e718"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.4.2/stamp_0.4.2_linux_arm64.tar.gz"
+      sha256 "02ad1b8793377873a27964d6604c1a50901bfbb4f56c34346791a3302cda6c5d"
 
       def install
         bin.install "stamp"
