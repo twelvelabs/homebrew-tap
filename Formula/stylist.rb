@@ -5,43 +5,43 @@
 class Stylist < Formula
   desc "Manage all your code quality tools with a single executable"
   homepage "https://github.com/twelvelabs/stylist"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.1/stylist_0.3.1_darwin_arm64"
-      sha256 "e45812ce66f8d3862aad607d36d537c4a168a37ecb386e9dda4e79913a37ad8b"
+      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.2/stylist_0.3.2_darwin_arm64"
+      sha256 "8a3c4e3bb5ece3340e7c4b351a35514afe109bf1986a1abbf629f38c383f89f5"
 
       def install
-        bin.install "stylist_0.3.1_darwin_arm64" => "stylist"
+        bin.install "stylist_0.3.2_darwin_arm64" => "stylist"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.1/stylist_0.3.1_darwin_amd64"
-      sha256 "6dd6bf84e69091a163611fcb161e4e13f897ff4fa663a0e94234cc3f16d4a113"
+      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.2/stylist_0.3.2_darwin_amd64"
+      sha256 "1f6ebd1c52054bce95828c04ed24362133bdbc5304215f799f61ace3ea2dc2a9"
 
       def install
-        bin.install "stylist_0.3.1_darwin_amd64" => "stylist"
+        bin.install "stylist_0.3.2_darwin_amd64" => "stylist"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.1/stylist_0.3.1_linux_amd64"
-      sha256 "99c3e8af58c384c2c9136d78637410109306e3ffdfe86573cd8cdd1972e5579f"
+      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.2/stylist_0.3.2_linux_amd64"
+      sha256 "89049b17ace4a60a15f0c9bf86cb9223b02001e74b241b35eda020142a554f60"
 
       def install
-        bin.install "stylist_0.3.1_linux_amd64" => "stylist"
+        bin.install "stylist_0.3.2_linux_amd64" => "stylist"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.1/stylist_0.3.1_linux_arm64"
-      sha256 "b68347b4af7bb8c20e96bd85996d89c1714288206316585ae73e92c34aa17a50"
+      url "https://github.com/twelvelabs/stylist/releases/download/v0.3.2/stylist_0.3.2_linux_arm64"
+      sha256 "346dd01ed0cdfbeb2a3d66d674e21e718b7c809d8762b82f3da0cf44d7e60bc3"
 
       def install
-        bin.install "stylist_0.3.1_linux_arm64" => "stylist"
+        bin.install "stylist_0.3.2_linux_arm64" => "stylist"
       end
     end
   end
