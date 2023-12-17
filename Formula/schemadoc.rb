@@ -5,13 +5,13 @@
 class Schemadoc < Formula
   desc "Generate markdown documents from JSON schema files"
   homepage "https://github.com/twelvelabs/schemadoc"
-  version "0.1.3"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.1.3/schemadoc_0.1.3_darwin_arm64.tar.gz"
-      sha256 "16a2a0b3aca5b9d6ffbffd62dfd952ee391378dd3d1bb9b69642c192f276a6e6"
+      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.2.0/schemadoc_0.2.0_darwin_arm64.tar.gz"
+      sha256 "f0c6a9b632e6d54d6ad0b9d91f8c7c5a8e93eb990bc5c8b63e9ed49e06ad2789"
 
       def install
         bin.install "schemadoc"
@@ -22,8 +22,8 @@ class Schemadoc < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.1.3/schemadoc_0.1.3_darwin_amd64.tar.gz"
-      sha256 "244992923f7096ca3d33ea8087b0ba26cfd9d7a2b54fbf6c8ef8eb5016189d30"
+      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.2.0/schemadoc_0.2.0_darwin_amd64.tar.gz"
+      sha256 "dda9c87c537f38ca62cb294aaeaa1249d6084ffe943a86c0a8617058f9b95e71"
 
       def install
         bin.install "schemadoc"
@@ -37,8 +37,8 @@ class Schemadoc < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.1.3/schemadoc_0.1.3_linux_arm64.tar.gz"
-      sha256 "91abaef1ed3cc1207ba1849f5053f6fe6bc59d48a0edf53508790364766fa284"
+      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.2.0/schemadoc_0.2.0_linux_arm64.tar.gz"
+      sha256 "a932cbe87d0c1a8a9afa891726eacfafbbc9fa8b348bd2c40f36798d605819ba"
 
       def install
         bin.install "schemadoc"
@@ -49,8 +49,8 @@ class Schemadoc < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.1.3/schemadoc_0.1.3_linux_amd64.tar.gz"
-      sha256 "f7fd14f5aa345f8c17165fe41fab94a299dafce733e6857d560dffd6c87495e2"
+      url "https://github.com/twelvelabs/schemadoc/releases/download/v0.2.0/schemadoc_0.2.0_linux_amd64.tar.gz"
+      sha256 "8d326ad15c9cfbd6e6b5762d481785008bb1e9475e590a976cb63897a7ce6578"
 
       def install
         bin.install "schemadoc"
