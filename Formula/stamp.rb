@@ -5,13 +5,13 @@
 class Stamp < Formula
   desc "A project and file scaffolding tool"
   homepage "https://github.com/twelvelabs/stamp"
-  version "0.6.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.6.0/stamp_0.6.0_darwin_amd64.tar.gz"
-      sha256 "9428b422a6832e68b88957cb6378477ff07b175c8a016a89536c10856eb3beee"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.7.0/stamp_0.7.0_darwin_amd64.tar.gz"
+      sha256 "d9f1d643e2b1f6907a747ecf920dbd0ff415580ea2ac784f24b763c263038e92"
 
       def install
         bin.install "stamp"
@@ -22,8 +22,8 @@ class Stamp < Formula
       end
     end
     on_arm do
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.6.0/stamp_0.6.0_darwin_arm64.tar.gz"
-      sha256 "fe3efb725b7be45e09dd0e8ebb502a1064ddcf977ae77fbdd6765701d6941e9e"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.7.0/stamp_0.7.0_darwin_arm64.tar.gz"
+      sha256 "82ff6f2e53e8c8f2437a749328bcf7948c8dd2d7170f9d4bfba546c7fde92a4e"
 
       def install
         bin.install "stamp"
@@ -38,8 +38,8 @@ class Stamp < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twelvelabs/stamp/releases/download/v0.6.0/stamp_0.6.0_linux_amd64.tar.gz"
-        sha256 "bba45883e736e2536401b50195b487cde8d3222abf0625e0603bf6ee905e20fc"
+        url "https://github.com/twelvelabs/stamp/releases/download/v0.7.0/stamp_0.7.0_linux_amd64.tar.gz"
+        sha256 "9d7ecf6dab27738a866d4058f0fd9e52015e7ffbaa20777c1863ab6f98fc0d4e"
 
         def install
           bin.install "stamp"
@@ -52,8 +52,8 @@ class Stamp < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/twelvelabs/stamp/releases/download/v0.6.0/stamp_0.6.0_linux_arm64.tar.gz"
-        sha256 "200b809d7df19c3d9b34313741c814c8f2ee58f986a7a5c9909bc9a8c7b04528"
+        url "https://github.com/twelvelabs/stamp/releases/download/v0.7.0/stamp_0.7.0_linux_arm64.tar.gz"
+        sha256 "fe83a43b88eca2abe933681e68e391806d19a0d53d5ed10fc7b4101138c0d05d"
 
         def install
           bin.install "stamp"
