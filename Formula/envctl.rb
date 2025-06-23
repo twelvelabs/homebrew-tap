@@ -5,13 +5,13 @@
 class Envctl < Formula
   desc "Manage project environment variables"
   homepage "https://github.com/twelvelabs/envctl"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/envctl/releases/download/v0.3.0/envctl_0.3.0_darwin_amd64.tar.gz"
-      sha256 "7833c932b63ec7c707d438e6c1dd3c1f618557bef642999ac430ab0ab5ebaa09"
+      url "https://github.com/twelvelabs/envctl/releases/download/v0.4.0/envctl_0.4.0_darwin_amd64.tar.gz"
+      sha256 "85a8ea38774ee9444486a4b682db23865a166a9b0c3f549d57df8542faaa6e3f"
 
       def install
         bin.install "envctl"
@@ -22,8 +22,8 @@ class Envctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/envctl/releases/download/v0.3.0/envctl_0.3.0_darwin_arm64.tar.gz"
-      sha256 "cf0f43449ad90e5cbd9c41b1dcd091a013c52d75a8c5a365bec6ef638cac8a46"
+      url "https://github.com/twelvelabs/envctl/releases/download/v0.4.0/envctl_0.4.0_darwin_arm64.tar.gz"
+      sha256 "f01a1586df1016b4ed05d6930e27380307f6797e0a8c3251ecc82bdcdcd37172"
 
       def install
         bin.install "envctl"
@@ -37,8 +37,8 @@ class Envctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/envctl/releases/download/v0.3.0/envctl_0.3.0_linux_amd64.tar.gz"
-      sha256 "a5073bcffe1b32a2b3f83071db6bf2f996aa259a15504d72b6a6cff8dcf79dcc"
+      url "https://github.com/twelvelabs/envctl/releases/download/v0.4.0/envctl_0.4.0_linux_amd64.tar.gz"
+      sha256 "b231ec1cf853c275c45099cee0be5fe8d3f612a2565731710fbbede9fcc5bfe2"
       def install
         bin.install "envctl"
         bash_completion.install "completions/envctl.bash" => "envctl"
@@ -48,8 +48,8 @@ class Envctl < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/envctl/releases/download/v0.3.0/envctl_0.3.0_linux_arm64.tar.gz"
-      sha256 "508e1b41159565f111cbe504629f136b2911feccc6da5dfa0c63aa760323740e"
+      url "https://github.com/twelvelabs/envctl/releases/download/v0.4.0/envctl_0.4.0_linux_arm64.tar.gz"
+      sha256 "c726e16fb67e3c40ca93dbb95033bef7bdb6c69787b1bca21b03710518317126"
       def install
         bin.install "envctl"
         bash_completion.install "completions/envctl.bash" => "envctl"
