@@ -5,13 +5,13 @@
 class Stamp < Formula
   desc "A project and file scaffolding tool"
   homepage "https://github.com/twelvelabs/stamp"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_darwin_amd64.tar.gz"
-      sha256 "a632c14c5ab2ec85d351f870bac9ab12e431aa10ccb6ddf3f59f8ad0e85fd1ad"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.11.0/stamp_0.11.0_darwin_amd64.tar.gz"
+      sha256 "1230f3d0e52467f1a5c5b0a8760c7a6d09024c1cc004dfb094fd454a03fd3209"
 
       define_method(:install) do
         bin.install "stamp"
@@ -22,8 +22,8 @@ class Stamp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_darwin_arm64.tar.gz"
-      sha256 "91938cba04ec90eea65204ea5192fda61dad25f2a2ba7ad0ae27ef476f028c4a"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.11.0/stamp_0.11.0_darwin_arm64.tar.gz"
+      sha256 "898ff0cf6b055aeef67deb475055eee6cc54029b2e60d0e33d718925d4cffe1a"
 
       define_method(:install) do
         bin.install "stamp"
@@ -37,8 +37,8 @@ class Stamp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_linux_amd64.tar.gz"
-      sha256 "0cb5d9ecef59743e0664ece7378860335ddf523b5d187cef8ad943b5405f23d6"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.11.0/stamp_0.11.0_linux_amd64.tar.gz"
+      sha256 "36624cd49803861dbc45ddc6c3a12cc23d87c0de33755e241658435814e3f1b8"
       define_method(:install) do
         bin.install "stamp"
         bash_completion.install "completions/stamp.bash" => "stamp"
@@ -48,8 +48,8 @@ class Stamp < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_linux_arm64.tar.gz"
-      sha256 "6532edb36fbfef226b9e39a4ba24a5b999e86aa746bfa96e40be0f679599812b"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.11.0/stamp_0.11.0_linux_arm64.tar.gz"
+      sha256 "fd56a568a8008738953e7132a9f8312898ac099718e003d8e77dd7934c5897b1"
       define_method(:install) do
         bin.install "stamp"
         bash_completion.install "completions/stamp.bash" => "stamp"
