@@ -5,15 +5,15 @@
 class Stamp < Formula
   desc "A project and file scaffolding tool"
   homepage "https://github.com/twelvelabs/stamp"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.9.0/stamp_0.9.0_darwin_amd64.tar.gz"
-      sha256 "23634739df4567e08269dc28c86d349be45237d4947939749cd9ede600c100a8"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_darwin_amd64.tar.gz"
+      sha256 "a632c14c5ab2ec85d351f870bac9ab12e431aa10ccb6ddf3f59f8ad0e85fd1ad"
 
-      def install
+      define_method(:install) do
         bin.install "stamp"
         bash_completion.install "completions/stamp.bash" => "stamp"
         zsh_completion.install "completions/stamp.zsh" => "_stamp"
@@ -22,10 +22,10 @@ class Stamp < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.9.0/stamp_0.9.0_darwin_arm64.tar.gz"
-      sha256 "738ba890f354ffc742f16ee5c9b373635bbe4444acb656aa736d0f81265da17e"
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_darwin_arm64.tar.gz"
+      sha256 "91938cba04ec90eea65204ea5192fda61dad25f2a2ba7ad0ae27ef476f028c4a"
 
-      def install
+      define_method(:install) do
         bin.install "stamp"
         bash_completion.install "completions/stamp.bash" => "stamp"
         zsh_completion.install "completions/stamp.zsh" => "_stamp"
@@ -37,9 +37,9 @@ class Stamp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.9.0/stamp_0.9.0_linux_amd64.tar.gz"
-      sha256 "30f1d930fd5de87e6b5a06769a84a952021b523ddc46bc4168e2eaf8e1e74e4a"
-      def install
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_linux_amd64.tar.gz"
+      sha256 "0cb5d9ecef59743e0664ece7378860335ddf523b5d187cef8ad943b5405f23d6"
+      define_method(:install) do
         bin.install "stamp"
         bash_completion.install "completions/stamp.bash" => "stamp"
         zsh_completion.install "completions/stamp.zsh" => "_stamp"
@@ -48,9 +48,9 @@ class Stamp < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/twelvelabs/stamp/releases/download/v0.9.0/stamp_0.9.0_linux_arm64.tar.gz"
-      sha256 "7deb3bfa8a15a9ef0bab4e972151b87beb38828296e12b33058a3b460a0255db"
-      def install
+      url "https://github.com/twelvelabs/stamp/releases/download/v0.10.0/stamp_0.10.0_linux_arm64.tar.gz"
+      sha256 "6532edb36fbfef226b9e39a4ba24a5b999e86aa746bfa96e40be0f679599812b"
+      define_method(:install) do
         bin.install "stamp"
         bash_completion.install "completions/stamp.bash" => "stamp"
         zsh_completion.install "completions/stamp.zsh" => "_stamp"
